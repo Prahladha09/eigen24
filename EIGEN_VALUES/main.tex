@@ -367,6 +367,25 @@ Thus, the overall time complexity of the Jacobi eigenvalue algorithm in this cod
 O(n^4).
 \]
 
-The algorithm's time complexity grows rapidly with the size of the matrix, making it less efficient for very large matrices compared to other eigenvalue algorithms like the QR decomposition or Divide-and-Conquer methods.\\So if you want to make it more efficient use the QR decomposition or Divide-and-Conquer method.
-\end{document}
+The algorithm's time complexity grows rapidly with the size of the matrix, making it less efficient for very large matrices compared to other eigenvalue algorithms like the QR decomposition or Divide-and-Conquer methods.\\So if you want to make it more efficient use the QR decomposition or Divide-and-Conquer method.\\
 
+\section*{\underline{\textbf{Different Algorithms - Comparision}}}
+
+\subsection*{\underline{Characteristic Polynomial Method}}
+This method can be applied to any matrix for eigenvalues, but it becomes computationally tough for large matrices. Additionally, it provides less accurate answers and is numerically unstable for larger matrices.
+
+\subsection*{\underline{QR Algorithm}}
+This is applicable to all types of matrices and is numerically stable. However, it is computationally intensive for large matrices and not suitable for sparse matrices.
+
+\subsection*{\underline{Jacobi Method}}
+This method gives accurate answers for real symmetric and Hermitian matrices. However, it is also computationally expensive, and its convergence rate is low.
+
+\subsection*{\underline{Divide and Conquer Method}}
+This method is efficient for symmetric matrices but not suitable for other types of matrices. Additionally, it is challenging to handle.
+
+\subsection*{\underline{Lanczos Method}}
+This method is efficient for large sparse matrices and is more memory-efficient compared to other methods. However, it is also restricted to symmetric matrices.
+
+\textbf{conclusion:} We will prefer the method based on our matrix.
+
+\end{document}
